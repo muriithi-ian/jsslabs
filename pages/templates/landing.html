@@ -1,0 +1,612 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-success" role="status" style="width: 3rem; height: 3rem; color: var(--primary);"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+
+    <!-- Carousel Start -->
+    <section id="home">
+    <div class="container-fluid px-0 mb-5" style="height:100%;">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" style = "overflow:hidden;">
+                    <img class="w-100" src="{% static "img/station.jpg" %}" alt="Image" style="height:100%;">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-10 text-start">
+                                    <p class="fs-5 fw-medium text-success text-uppercase animated slideInRight">Tried & Tested. Quality Proven</p>
+                                    <h1 class="display-1 text-custom mb-5 animated slideInRight">Laboratory Design and Build Solutions</h1>
+                                    <a href="#services" class="btn btn-dark py-3 px-5 animated slideInRight">Explore More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style = "overflow:hidden;">
+                    <img class="w-100" src="{% static "img/lab2.jpg" %}" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-10 text-start">
+                                    <p class="fs-5 fw-medium text-success text-uppercase animated slideInRight">Revolutionary Technology For Innovative Education</p>
+                                    <h1 class="display-1 text-custom mb-5 animated slideInRight">Providing Bespoke Lab Benching and Furniture Countrywide</h1>
+                                    <a href="#services" class="btn btn-dark py-3 px-5 animated slideInRight">Explore More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    </section>
+    <!-- Carousel End -->
+
+
+
+    <!-- About Start -->
+    <section id="about">
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <div class="row gx-3 h-100">
+                        <div class="col-6 align-self-start wow fadeInUp" data-wow-delay="0.1s">
+                            <img class="img-fluid" src="{% static "img/lab3.jpg" %}">
+                        </div>
+                        <div class="col-6 align-self-end wow fadeInDown" data-wow-delay="0.1s">
+                            <img class="img-fluid" src="{% static "img/sinks.jpg" %}">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <p class="fw-medium text-uppercase text-success mb-2">About Us</p>
+                    <h1 class="display-5 mb-4">Leaders in Lab Furniture Design & Equipment Outfitting Countrywide!</h1>
+                    <p class="mb-4">PEP is one of Kenya's leading manfacturers and installers of laboratory equipment and furniture. Based in Nairobi, we specialize
+                        in providing complete laboratoryrefurbishments and full construction solutions in Kenya and beyond.
+                    </p>
+                    <p class="mb-4">Whether it is an existing laboratory needing refurbishment, or a completely new project needing constrction,
+                        PEP has the solutions you need.
+                    </p>
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="flex-shrink-0 bg-success p-4">
+                            <h1 class="display-2">100%</h1>
+                            <h5 class="text-white">Satisfaction</h5>
+                            <h5 class="text-white">Ratio</h5>
+                        </div>
+                        <div class="ms-4">
+                            <p><i class="fa fa-check text-success me-2"></i>Lab Implement Outfitting</p>
+                            <p><i class="fa fa-check text-success me-2"></i>Laboratory Refurbishment</p>
+                            <p><i class="fa fa-check text-success me-2"></i>Gas & Electric Installation</p>
+                            <p><i class="fa fa-check text-success me-2"></i>Full Lab Design & Construction</p>
+                        </div>
+                    </div>
+                    <div class="row pt-2">
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-success">
+                                    <i class="fa fa-envelope-open text-white"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <p class="mb-2">Email us</p>
+                                    <h5 class="mb-3">info@juniorsecondarylab.co.ke</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center" style="padding-left: 50px;">
+                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-success">
+                                    <i class="fa fa-phone-alt text-white"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <p class="mb-2">Call us</p>
+                                    <h5 class="mb-0">+254 701 547 400</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- About End -->
+
+
+    <!-- Facts Start -->
+    <div class="container-fluid facts my-5 p-5">
+        <div class="row g-5">
+            <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay="0.1s">
+                <div class="text-center border p-5">
+                    <i class="fa fa-certificate fa-3x text-white mb-3"></i>
+                    <h1 class="display-2 text-success mb-0" data-toggle="counter-up">100</h1>
+                    <span class="fs-5 fw-semi-bold text-white">% Satisfaction Ratio</span>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay="0.3s">
+                <div class="text-center border p-5">
+                    <i class="fa fa-users-cog fa-3x text-white mb-3"></i>
+                    <h1 class="display-2 text-success mb-0" data-toggle="counter-up">5</h1>
+                    <span class="fs-5 fw-semi-bold text-white">Star Team Members</span>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay="0.5s">
+                <div class="text-center border p-5">
+                    <i class="fa fa-users fa-3x text-white mb-3"></i>
+                    <h1 class="display-2 text-success mb-0" data-toggle="counter-up">15</h1>
+                    <span class="fs-5 fw-semi-bold text-white">Happy Clients</span>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay="0.7s">
+                <div class="text-center border p-5">
+                    <i class="fa fa-check-double fa-3x text-white mb-3"></i>
+                    <h1 class="display-2 text-success mb-0" data-toggle="counter-up">23</h1>
+                    <span class="fs-5 fw-semi-bold text-white">Projects Done</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Facts End -->
+
+
+    <!-- Features Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="position-relative me-lg-4">
+                        <img class="img-fluid w-100" src="{% static "img/lab5.jpg" %}" alt="">
+                        <span
+                            class="position-absolute top-50 start-100 translate-middle bg-white rounded-circle d-none d-lg-block"
+                            style="width: 120px; height: 120px;"></span>
+                        <button type="button" class="btn-play" data-bs-toggle="modal"
+                            data-src="{% static "img/walkthrough.mp4" %}" data-bs-target="#videoModal">
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <p class="fw-medium text-uppercase text-success mb-2">Why Choose Us?</p>
+                    <h1 class="display-5 mb-4">Few Reasons Why People Choose Us!</h1>
+                    <p class="mb-4">Working with us earns you great quality work, alongside a number of benefits sch as:
+                    </p>
+                    <div class="row gy-4">
+                        <div class="col-12">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-success">
+                                    <i class="fa fa-check text-white"></i>
+                                </div>
+                                <div class="ms-4">
+                                    <h4>Experienced Professionals</h4>
+                                    <span>Our team of dedicated professionals offers you meticulously refined work 
+                                        that will surely stand the test of time.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-success">
+                                    <i class="fa fa-check text-white"></i>
+                                </div>
+                                <div class="ms-4">
+                                    <h4>Kenya's top manufacturer</h4>
+                                    <span>Based just otside Nairobi, we use the best local materials to manufacture reliable, locally-produced 
+                                        furniture, powered by state-of-the-art tools, beam saws, edge banders and CNC machinery.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-success">
+                                    <i class="fa fa-check text-white"></i>
+                                </div>
+                                <div class="ms-4">
+                                    <h4>CBC Approved Labs</h4>
+                                    <span>Our team is well versed with the requirements of the CBC Junior Secondary requirements 
+                                        and curriculum as mandated by the Ministry of Education.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Features End -->
+
+
+    <!-- Video Modal Start -->
+    <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Lab Walkthrough</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 16:9 aspect ratio -->
+                    <div class="ratio ratio-16x9">
+                        <video controls poster = "{% static "img/lab5.jpg" %}" >
+                            <source src="{% static "img/walkthrough.mp4" %}" type="video/mp4">
+                          </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+    
+    <!--Streak Start-->
+    <div class="streak streak-photo streak-md"
+      style="background-image: url(&#39;https://mdbootstrap.com/img/Photos/Horizontal/Things/full%20page/img%20%287%29.jpg&#39;);">
+      <div class="flex-center mask rgba-green-strong">
+        <div class="text-center white-text">
+          <h2 class="h2-responsive mb-5">
+            <i class="fas fa-quote-left" aria-hidden="true"></i>
+            We have the expertise to not only supply you with lab furniture but also assist you with the entire lab design process.
+            <i class="fas fa-quote-right" aria-hidden="true"></i>
+          </h2>
+      </div>
+    </div>
+    </div>
+    <!--Streak End-->
+
+
+    <!-- Service Start -->
+    <section id="services">
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="fw-medium text-uppercase text-success mb-2">Our Services</p>
+                <h1 class="display-5 mb-4">We Provide The Best Laboratory Fitting Services</h1>
+            </div>
+            <div class="row gy-5 gx-4">
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item">
+                        <img class="img-fluid" src="{% static "img/burner.jpg" %}" alt="">
+                        <div class="service-img">
+                            <img class="img-fluid" src="{% static "img/sinks.jpg" %}" alt="">
+                        </div>
+                        <div class="service-detail">
+                            <div class="service-title">
+                                <hr class="w-25">
+                                <h3 class="mb-0">Gas Installation</h3>
+                                <hr class="w-25">
+                            </div>
+                            <div class="service-text">
+                                <p class="text-white mb-0">Our team of professional gas technicians will install all energy equipment for the lab.</p>
+                            </div>
+                        </div>
+                        <a class="btn btn-light" href="">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item">
+                        <img class="img-fluid" src="{% static "img/burner.jpg" %}" alt="">
+                        <div class="service-img">
+                            <img class="img-fluid" src="{% static "img/lab3.jpg" %}" alt="">
+                        </div>
+                        <div class="service-detail">
+                            <div class="service-title">
+                                <hr class="w-25">
+                                <h3 class="mb-0">Lab Design & Build</h3>
+                                <hr class="w-25">
+                            </div>
+                            <div class="service-text">
+                                <p class="text-white mb-0">We specialize in making complete Turnkey Lab Design and build solutions. </p>
+                            </div>
+                        </div>
+                        <a class="btn btn-light" href="">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item">
+                        <img class="img-fluid" src="{% static "img/burner.jpg" %}" alt="">
+                        <div class="service-img">
+                            <img class="img-fluid" src="{% static "img/lab5.jpg" %}" alt="">
+                        </div>
+                        <div class="service-detail">
+                            <div class="service-title">
+                                <hr class="w-25">
+                                <h3 class="mb-0">Lab Plumbing and Furniture Maintenance</h3>
+                                <hr class="w-25">
+                            </div>
+                            <div class="service-text">
+                                <p class="text-white mb-0">Let us provide you with a complete lab refurbishment of your furniture, 
+                                    piping and wiring systems.
+                                </p>
+                            </div>
+                        </div>
+                        <a class="btn btn-light" href="">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- Service End -->
+
+
+    <!-- Project Start -->
+    <section id="projects">
+    <div class="container-fluid mod-1 pt-5 my-5 px-0">
+        <div class="text-center mx-auto mt-5 wow fadeIn" data-wow-delay="0.1s" style="max-width: 600px;">
+            <p class="fw-medium text-uppercase text-success mb-2">Our Projects</p>
+            <h1 class="display-5 text-white mb-5">See What We Have Completed Recently</h1>
+        </div>
+        <div class="owl-carousel project-carousel wow fadeIn" data-wow-delay="0.1s">
+            <a class="project-item" href="">
+                <img class="img-fluid" src="{% static "img/lab.jpg" %}" alt="">
+                <div class="project-title">
+                    <h5 class="text-success mb-0">Lab Refurbishment</h5>
+                </div>
+            </a>
+            <a class="project-item" href="">
+                <img class="img-fluid" src="{% static "img/lab3.jpg" %}" alt="">
+                <div class="project-title">
+                    <h5 class="text-success mb-0">Lab Design & Construction</h5>
+                </div>
+            </a>
+            <a class="project-item" href="">
+                <img class="img-fluid" src="{% static "img/burner.jpg" %}" alt="">
+                <div class="project-title">
+                    <h5 class="text-success mb-0">Gas Installation</h5>
+                </div>
+            </a>
+            <a class="project-item" href="">
+                <img class="img-fluid" src="{% static "img/sinks.jpg" %}" alt="">
+                <div class="project-title">
+                    <h5 class="text-success mb-0">Lab Plumbing and Water Supply</h5>
+                </div>
+            </a>
+        </div>
+    </div>
+    </section>
+    <!-- Project End -->
+
+
+    <!-- Team Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="fw-medium text-uppercase text-success mb-2">Our Team</p>
+                <h1 class="display-5 mb-5">Core Team Members</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item">
+                        <img class="img-fluid" src="img/team-1.jpg" alt="">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0 btn-square bg-success" style="width: 90px; height: 90px;">
+                                <i class="fa fa-2x fa-share text-white"></i>
+                            </div>
+                            <div class="position-relative overflow-hidden bg-light d-flex flex-column justify-content-center w-100 ps-4"
+                                style="height: 90px;">
+                                <h5>Wycliff Nderitu</h5>
+                                <span class="text-success">CEO & Founder</span>
+                                <div class="team-social">
+                                    <a class="btn btn-square btn-dark rounded-circle mx-1" href=""><i
+                                            class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square btn-dark rounded-circle mx-1" href=""><i
+                                            class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square btn-dark rounded-circle mx-1" href=""><i
+                                            class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item">
+                        <img class="img-fluid" src="img/team-2.jpg" alt="">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0 btn-square bg-success" style="width: 90px; height: 90px;">
+                                <i class="fa fa-2x fa-share text-white"></i>
+                            </div>
+                            <div class="position-relative overflow-hidden bg-light d-flex flex-column justify-content-center w-100 ps-4"
+                                style="height: 90px;">
+                                <h5>John Doe</h5>
+                                <span class="text-success">Project Manager</span>
+                                <div class="team-social">
+                                    <a class="btn btn-square btn-dark rounded-circle mx-1" href=""><i
+                                            class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square btn-dark rounded-circle mx-1" href=""><i
+                                            class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square btn-dark rounded-circle mx-1" href=""><i
+                                            class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item">
+                        <img class="img-fluid" src="img/team-3.jpg" alt="">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0 btn-square bg-success" style="width: 90px; height: 90px;">
+                                <i class="fa fa-2x fa-share text-white"></i>
+                            </div>
+                            <div class="position-relative overflow-hidden bg-light d-flex flex-column justify-content-center w-100 ps-4"
+                                style="height: 90px;">
+                                <h5>Place Holder</h5>
+                                <span class="text-success">Engineer</span>
+                                <div class="team-social">
+                                    <a class="btn btn-square btn-dark rounded-circle mx-1" href=""><i
+                                            class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square btn-dark rounded-circle mx-1" href=""><i
+                                            class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square btn-dark rounded-circle mx-1" href=""><i
+                                            class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="fw-medium text-uppercase text-success mb-2">Testimonial</p>
+                <h1 class="display-5 mb-5">What Our Clients Say!</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-img position-relative">
+                        <img class="img-fluid rounded-circle mx-auto mb-5" src="img/testimonial-1.jpg">
+                        <div class="btn-square bg-success rounded-circle">
+                            <i class="fa fa-quote-left text-white"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-text text-center rounded p-4">
+                        <p>Our lab is looking very nice. Your guys were all very professional and provided excellent service</p>
+                        <span class="fst-italic">Lab Technician</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-img position-relative">
+                        <img class="img-fluid rounded-circle mx-auto mb-5" src="img/testimonial-2.jpg">
+                        <div class="btn-square bg-success rounded-circle">
+                            <i class="fa fa-quote-left text-white"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-text text-center rounded p-4">
+                        <p>I wanted to compliment your guys for the fantastic work at TCJA. Your team was fast and the benches are really well done. Much appreciated!</p>
+                        <span class="fst-italic">Administrator - TCJA</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-img position-relative">
+                        <img class="img-fluid rounded-circle mx-auto mb-5" src="img/testimonial-3.jpg">
+                        <div class="btn-square bg-success rounded-circle">
+                            <i class="fa fa-quote-left text-white"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-text text-center rounded p-4">
+                        <p>At Mary Immaculate Nanyuki, safety is paramount. We and the client are happy to note your exemplary representation of PEP in supplying us with top notch quality.</p>
+                        <span class="fst-italic">Client</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Footer Start -->
+    <section id="cont">
+    <div class="container-fluid bg-success footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Our Office</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>PEP, B7 Muthaiga Suites, Nairobi, Kenya</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+254701547400</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@juniorsecondarylab.co.ke</p>
+                    <div class="d-flex pt-3">
+                        <a class="btn btn-square btn-dark rounded-circle me-2" href=""><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-dark rounded-circle me-2" href=""><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-dark rounded-circle me-2" href=""><i
+                                class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-dark rounded-circle me-2" href=""><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="#about">About Us</a>
+                    <a class="btn btn-link" href="#cont">Contact Us</a>
+                    <a class="btn btn-link" href="#services">Our Services</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Business Hours</h5>
+                    <p class="mb-1">Monday - Friday</p>
+                    <h6 class="text-light">08:00 am - 05:00 pm</h6>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Get a Quote!</h5>
+                    <p>Enquire anything with us. A human will definitely get back with you.</p>
+                    <div class="position-relative w-100">
+                    {% load widget_tweaks %}
+                    <form id="contact-form " method="POST">
+                        {% csrf_token %}              
+                    {% for hidden in form.hidden_fields %}
+                    {{ hidden }}
+                    {% endfor %}
+
+                    {% for field in form.visible_fields %}
+                    <div class="form-group">
+                      <div style="padding-bottom: 10px;">{% render_field field class="form-control" placeholder=field.label %}</div>
+                      {% for error in field.errors %}
+                      <span class="help-block">{{ error }}</span>
+                      {% endfor %}
+                    </div>
+                    {% endfor %}
+                    <input id="submit" name="submit" type="submit" value="Submit"
+                      class="btn btn-dark "/>
+                </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright bg-success py-4">
+        <div class="container text-center">
+            <p class="mb-2">Copyright &copy; <a class="fw-semi-bold text-white" href="#home">JSS Labs</a>, All Right Reserved.
+            </p>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-dark btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static "lib/wow/wow.min.js" %}"></script>
+    <script src="{% static "lib/easing/easing.min.js" %}"></script>
+    <script src="{% static "lib/waypoints/waypoints.min.js" %}"></script>
+    <script src="{% static "lib/owlcarousel/owl.carousel.min.js" %}"></script>
+    <script src="{% static "lib/counterup/counterup.min.js" %}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{% static "js/main.js"%}"></script>
+
+{% endblock content %}

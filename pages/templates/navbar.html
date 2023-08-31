@@ -1,0 +1,25 @@
+{% load static %}
+
+{% block content %}
+
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-0 pe-5">
+    <a href="#home" class="navbar-brand ps-5 me-0 text-truncate">
+        <h1 class="text-white m-0">Junior Secondary School Laboratories</h1>
+    </a>
+    <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
+            <a href="#home" class="nav-item nav-link active">Home</a>
+            <a href="#about" class="nav-item nav-link">About</a>
+            <a href="#services" class="nav-item nav-link">Services</a>
+            <a href="#cont" class="nav-item nav-link">Contact</a>
+        </div>
+        <a href="{% url 'quote' %}" class="btn btn-success px-3 d-none d-lg-block">Our Prices</a>
+    </div>
+</nav>
+<!-- Navbar End -->
+
+{% endblock content %}

@@ -77,6 +77,7 @@ h6,
     transition: .5s;
     font-weight: 500;
     background-color: var(--primary);
+    color: var(--dark);
 }
 
 .btn-primary,
@@ -85,7 +86,7 @@ h6,
 }
 
 .btn-success{
-    color:var(--primary);
+    color: var(--dark);
 }
 
 .btn-square {
@@ -692,6 +693,20 @@ h6,
 
 .testimonial-carousel .owl-item.center .testimonial-text {
     transform: scale(1);
+}
+
+/*** Whatsapp ***/
+.contact-whatsapp-cta {
+    position: fixed;
+    z-index: 100;
+    bottom: 10px;
+    right: 0;
+    left: auto;
+    color: #000;
+    top: auto;
+    background: #fff;
+    border-radius: 10px 0 0 10px;
+    box-shadow: 0 0 5px #000;
 }
 
 

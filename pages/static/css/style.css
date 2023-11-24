@@ -699,16 +699,27 @@ h6,
 .contact-whatsapp-cta {
     position: fixed;
     z-index: 100;
-    bottom: 10px;
+    bottom: 100px;
     right: 0;
     left: auto;
     color: #000;
     top: auto;
-    background: #fff;
+    background: var(--primary);
     border-radius: 10px 0 0 10px;
     box-shadow: 0 0 5px #000;
 }
 
+
+.contact-whatsapp-cta h4 a {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
 
 /*** Footer ***/
 .footer {

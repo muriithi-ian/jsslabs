@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-o@)zkmj7y8+p-ec)*00)j+%bygfc)_z$v4d#wxyirn0$uu-f9+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['juniorsecondarylab.co.ke','www.juniorsecondarylab.co.ke', 'mail.juniorsecondarylab.co.ke', "localhost"]
+ALLOWED_HOSTS = ['juniorsecondarylab.co.ke','www.juniorsecondarylab.co.ke', 'mail.juniorsecondarylab.co.ke']
 
 
 # Application definition
